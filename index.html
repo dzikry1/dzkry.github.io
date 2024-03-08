@@ -11,7 +11,7 @@
   </head>
   <body id="home">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #f53796">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #fc8eac">
       <div class="container">
         <a class="navbar-brand" href="#">Ris Dzikry Lugya R.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#ffd1c1"
+          fill="#ffb6c6"
           fill-opacity="1"
           d="M0,192L34.3,186.7C68.6,181,137,171,206,176C274.3,181,343,203,411,181.3C480,160,549,96,617,90.7C685.7,85,754,139,823,176C891.4,213,960,235,1029,234.7C1097.1,235,1166,213,1234,197.3C1302.9,181,1371,171,1406,165.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
         ></path>
@@ -80,7 +80,7 @@
     <!-- akhir about -->
 
     <!-- Project -->
-    <section id="favorite" style="background-color: #ffd1c1">
+    <section id="favorite" style="background-color: #ffb6c6">
       <div class="container">
         <div clas="row">
           <div class="col text-center">
@@ -152,9 +152,9 @@
                 <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-kirim" style="background-color: #f53796">Kirim</button>
+              <button type="submit" class="btn btn-kirim" style="background-color: #ff6ec7">Kirim</button>
 
-              <button class="btn btn-loading d-none" style="background-color: #f53796;" type="button" disabled>
+              <button class="btn btn-loading d-none" style="background-color: #f53796" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                 <span role="status">Loading...</span>
               </button>
@@ -181,7 +181,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#ffd1c1"
+          fill="#fc8eac"
           fill-opacity="1"
           d="M0,160L34.3,144C68.6,128,137,96,206,117.3C274.3,139,343,213,411,234.7C480,256,549,224,617,192C685.7,160,754,128,823,138.7C891.4,149,960,203,1029,202.7C1097.1,203,1166,149,1234,149.3C1302.9,149,1371,203,1406,229.3L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
         ></path>
@@ -190,7 +190,7 @@
     <!-- akhir contact -->
 
     <!-- Footer -->
-    <footer class="text-center fw-bold text-white p-3" style="background-color: #ffd1c1">
+    <footer class="text-center fw-bold text-white p-3" style="background-color: #fc8eac">
       <p>Made In Waled-Cirebon By Dzikry</p>
     </footer>
     <!-- AKhir footer -->
@@ -212,11 +212,11 @@
           .then((response) => {
             // tampilkan tombol kirim, hilangkan tombol loading
             btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        // tampil notif
-        myAlert.classList.toggle('d-none');
-        // reset
-        form.reset();
+            btnKirim.classList.toggle('d-none');
+            // tampil notif
+            myAlert.classList.toggle('d-none');
+            // reset
+            form.reset();
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
