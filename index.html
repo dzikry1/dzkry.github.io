@@ -199,7 +199,7 @@
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwiu_EZqmEKVCh0Gt28TVXXpu5ED44l8nDtJw4K8cXCfmTIUtru1onVOvHJVrZKwxCy/exec';
       const form = document.forms['dzikry-contact'];
-      const btnKirim = document.querySelector( '.btn-kirim');
+      const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
       const myAlert = document.querySelector('.my-alert');
 
@@ -217,7 +217,7 @@
         myAlert.classList.toggle('d-none');
         // reset
         form.reset();
-            console.log('Success!', response)
+            console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
       });
